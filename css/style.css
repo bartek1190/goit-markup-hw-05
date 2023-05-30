@@ -62,10 +62,24 @@ body {
 .header-nav-link {
   color: var(--general-font-color);
   text-decoration: none;
+  position: relative;
 }
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: var(--general-blue-color);
+}
+.active {
+  color: var(--general-blue-color);
+}
+.current-page-underline::after {
+  content: '';
+  position: absolute;
+  background-color: var(--general-blue-color);
+  width: 100%;
+  left: 0;
+  bottom: -32px;
+  border-radius: 2px;
+  height: 4px;
 }
 .header-contact {
   font-size: 14px;
