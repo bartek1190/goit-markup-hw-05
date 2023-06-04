@@ -517,29 +517,18 @@ img {
   text-align: center;
 }
 .modal {
-  top: 50%;
-  left: 50%;
-  width: 528px;
-  height: 581px;
-  background: var(--white-font-color);
+  position: relative;
+  margin: auto;
+  background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  position: fixed;
-  z-index: 2;
-  transition-property: visibility, opacity, transform;
-  transition-duration: 2s;
-  transform: translateX(-50%) translateY(-50%) scale(1) rotate(360deg)
-    skew(0deg, 0deg);
-  opacity: 1;
-  display: block;
+  width: 528px;
+  height: 581px;
 }
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-  transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
-    skew(40deg, 40deg);
 }
 .modal-close-style {
   border-radius: 50%;
@@ -556,11 +545,15 @@ img {
 }
 
 .backdrop {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
-  top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.2);
+  right: 0;
+  top: 0;
+  bottom: 0;
   z-index: 1;
+  transform: scale(1);
+  transition-duration: 600ms;
+  transition-timing-function: var(--cubic-bezier);
 }
