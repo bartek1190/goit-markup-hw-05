@@ -398,7 +398,7 @@ img {
   fill: var(--contact-color);
   margin-right: 10px;
 }
-.pierdolut {
+.whatwedo-element-container {
   background-color: var(--container-team-color);
   width: 270px;
   height: 120px;
@@ -529,7 +529,7 @@ img {
   z-index: 2;
   transition-property: visibility, opacity, transform;
   transition-duration: 2s;
-  transform: translateX(-50%) translateY(-50%) scale(1) rotate(720deg)
+  transform: translateX(-50%) translateY(-50%) scale(1) rotate(360deg)
     skew(0deg, 0deg);
   opacity: 1;
   display: block;
@@ -555,7 +555,7 @@ img {
   background: transparent;
 }
 
-.modal-backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
