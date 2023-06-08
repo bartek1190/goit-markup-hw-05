@@ -64,17 +64,15 @@ body {
   color: var(--general-font-color);
   text-decoration: none;
   position: relative;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
 }
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: var(--general-blue-color);
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-bezier);
 }
 .active {
   color: var(--general-blue-color);
-  transition-duration: 250ms;
-  transition: var(--cubic-bezier);
 }
 .current-page-underline::after {
   content: '';
@@ -97,18 +95,16 @@ body {
   color: var(--contact-color);
   display: flex;
   align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
 }
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--general-blue-color);
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-bezier);
 }
 .header-contact-link:hover .envelope,
 .header-contact-link:focus .envelope {
   fill: var(--general-blue-color);
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-bezier);
 }
 
 .main-banner-title {
@@ -223,12 +219,12 @@ body {
 .footer-link {
   text-decoration: none;
   color: var(--footer-link-contact-color);
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
 }
 .footer-link:hover,
 .footer-link:focus {
   color: var(--general-blue-color);
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-bezier);
 }
 
 .article-list-button {
@@ -242,6 +238,8 @@ body {
   line-height: 1.6em;
   letter-spacing: 0.03em;
   text-align: center;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
 }
 .article-list-button:hover,
 .article-list-button:focus {
@@ -251,13 +249,13 @@ body {
   box-shadow: 0px 2px 2px 0px #0000001f;
   box-shadow: 0px 1px 2px 0px #00000014;
   box-shadow: 0px 3px 1px 0px #0000001a;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-bezier);
 }
 .article-image-container {
   display: flex;
   flex-direction: column;
   flex-basis: calc((100% - 60px) / 3);
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
 }
 
 .overlay-div {
@@ -279,8 +277,6 @@ body {
 .article-image-container:hover .overlay,
 .article-image-container:focus .overlay {
   transform: translateY(0);
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-bezier);
 }
 
 .animation-tekst {
@@ -295,8 +291,6 @@ body {
 .article-image-container:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-bezier);
 }
 .image-description1 {
   font-size: 18px;
@@ -442,19 +436,17 @@ img {
   cursor: pointer;
   padding-left: 11px;
   padding-top: 11px;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
 }
 .magic-icon:hover,
 .magic-icon:focus {
   border: 1px solid #2196f3;
   background-color: #2196f3;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-bezier);
 }
 .magic-icon:hover .real-icon,
 .magic-icon:focus .real-icon {
   fill: #ffffff;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-bezier);
 }
 .our-clients-liststyle {
   list-style: none;
@@ -479,6 +471,8 @@ img {
   justify-content: center;
   cursor: pointer;
   color: var(--icon-color);
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
 }
 .color-fill {
   fill: currentColor;
@@ -486,13 +480,9 @@ img {
 .clients-container-icon:hover .color-fill,
 .clients-container-icon:focus .color-fill {
   fill: var(--general-blue-color);
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-bezier);
 }
 .clients-container-icon:hover {
   border: 1px solid var(--general-blue-color);
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-bezier);
 }
 .display-flex {
   display: flex;
